@@ -5,6 +5,7 @@
   --foreground: #353430;
   --accent: #ff8dcb;
   --title-color: #ffc2e6;
+  --display-shadow: #ff0070;
   --decor-text: #353430;
   --decoration: #353430;
   --section-heading: #353430;
@@ -20,6 +21,7 @@
     --foreground: #353430;
     --accent: #ff8dcb;
     --title-color: #ffc2e6;
+    --display-shadow: #ff0070;
     --decor-text: #353430;
     --decoration: #353430;
     --section-heading: #353430;

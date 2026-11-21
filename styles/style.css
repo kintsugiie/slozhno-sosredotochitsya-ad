@@ -3,6 +3,8 @@
   font: 400 18px/1.3 var(--font);
   isolation: isolate;
   background-color: var(--background);
+  background-attachment: fixed;
+
 }
 
 .page::before {
@@ -275,12 +277,6 @@
   .gallery__item_type_street {
     grid-area: street;
     aspect-ratio: 3 / 2;
-  }
-
-  .gallery__item_type_ice-cream img,
-  .gallery__item_type_tape img {
-    position: absolute;
-    inset: 0;
   }
 }
 

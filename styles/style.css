@@ -1,5 +1,23 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  color: var(--foreground);
+  font: 400 18px/1.3 var(--font);
+  background: var(--background) var(--background-image) center / cover fixed;
+}
+
+.title-decor {
+  color: var(--decor-text);
+  background-color: var(--accent);
+}
+
+.display-title {
+  color: var(--title-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 0.825;
+  text-shadow: 4px 4px var(--accent);
+}
+
+@media (width >= 768px) {
+  .display-title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }

@@ -221,6 +221,13 @@
   }
 }
 
+@media (768px <= width < 1024px) {
+  .section_type_why,
+  .section_type_advice {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
+}
+
 @media (width >= 1024px) {
   .section_type_causes .section__cards {
     grid-template-columns: repeat(3, minmax(0, 1fr));

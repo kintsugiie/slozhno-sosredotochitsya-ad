@@ -211,3 +211,51 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+.gallery,
+.gallery__list {
+  display: grid;
+  gap: var(--gutter);
+}
+
+.gallery__item img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+@media (width >= 768px) {
+  .gallery__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas:
+      'sunset sunset ice'
+      'tape books ice'
+      'tape street street';
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .gallery__item_type_sunset {
+    grid-area: sunset;
+  }
+
+  .gallery__item_type_ice-cream {
+    grid-area: ice;
+  }
+
+  .gallery__item_type_tape {
+    grid-area: tape;
+  }
+
+  .gallery__item_type_books {
+    grid-area: books;
+  }
+
+  .gallery__item_type_street {
+    grid-area: street;
+  }
+
+  .gallery__item {
+    min-block-size: 0;
+  }
+}

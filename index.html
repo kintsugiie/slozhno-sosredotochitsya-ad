@@ -4,22 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
+    <link rel="stylesheet" href="./styles/light.css" />
     <title>Сложно сосредоточиться</title>
     <script src="./scripts/script.js"></script>
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <nav class="header__theme-menu">
+      <span class="header__rec" aria-hidden="true">REC</span>
+      <nav class="header__theme-menu" aria-label="Цветовая тема">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
-            <button
+            <button type="button"
               class="header__theme-menu-button header__theme-menu-button_type_light"
             >
               День
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
+            <button type="button"
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
               disabled
             >
@@ -27,7 +38,7 @@
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
+            <button type="button"
               class="header__theme-menu-button header__theme-menu-button_type_dark"
             >
               Неон
@@ -35,6 +46,82 @@
           </li>
         </ul>
       </nav>
+      <h1 class="header__title display-title">no focus</h1>
+      <p class="header__description title-decor">
+        Что делать, когда не можешь делать ничего<br />
+        Или почему нам так сложно сконцентрироваться, особенно когда очень надо
+      </p>
     </header>
+    <main class="content">
+      <section class="section section_type_why">
+        <h2 class="section__title">Почему сосредоточиться так сложно</h2>
+        <div class="section__cards">
+          <article class="card">
+            <h3 class="title-decor card__title">Многозадачность</h3>
+            <p>Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же легендарная многозадачность, когда она так нужна нам? Исследователи <a href="https://dana.org/article/multicosts-of-multitasking/">выяснили</a>, что мозгу тяжело концентрироваться даже на двух делах одновременно. Когда в поле внимания попадает несколько важных задач, мы работаем невнимательно, ошибаемся и быстро устаём.</p>
+          </article>
+          <article class="card">
+            <h3 class="title-decor card__title">Дофамин</h3>
+            <p>Когда мы отвлекаемся на что-то более приятное, мозг получает награду. Отсюда и соблазн переключиться с важного дела на уведомления, бесконечную ленту или новое видео. Возвращаться к задаче после каждого переключения становится всё труднее.</p>
+          </article>
+        </div>
+      </section>
+      <section class="section section_type_causes">
+        <h2 class="section__title">Что снижает концентрацию внимания?</h2>
+        <div class="section__cards">
+          <article class="card">
+            <h3 class="title-decor card__title">Многозадачность</h3>
+            <p>В режиме постоянного переключения мы тратим время на то, чтобы заново вспомнить контекст. Распределите задачи по времени и завершайте их по очереди.</p>
+          </article>
+          <article class="card">
+            <h3 class="title-decor card__title">Еда</h3>
+            <p>Когда хочется быстро восстановить силы, легко потянуться за сладким. Но устойчивую энергию дают регулярные приёмы пищи и разнообразный рацион.</p>
+          </article>
+          <article class="card">
+            <h3 class="title-decor card__title">Гаджеты</h3>
+            <p>Уведомления и открытые вкладки постоянно предлагают новые поводы отвлечься. Когда нужно сосредоточиться, уберите телефон и закройте всё, что не относится к задаче.</p>
+          </article>
+        </div>
+      </section>
+      <section class="section section_type_advice">
+        <h2 class="section__title">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h2>
+        <div class="section__cards">
+          <h3 class="title-decor">5 простых (на самом деле не очень) советов</h3>
+          <article class="card">
+            <h4 class="title-decor card__title">Представьте небо и облака</h4>
+            <p>Закройте глаза и представьте, что мысли проплывают мимо, как облака. Можно замечать их и спокойно возвращать внимание к тому, чем вы заняты.</p>
+          </article>
+          <article class="card">
+            <h4 class="title-decor card__title">Включите музыку</h4>
+            <p>Попробуйте музыку без слов, если она помогает отгородиться от посторонних звуков. Если музыка сама отвлекает, поработайте в тишине.</p>
+          </article>
+          <article class="card">
+            <h4 class="title-decor card__title">Прогуляйтесь</h4>
+            <p>Смените обстановку и пройдитесь пешком. Небольшой перерыв даёт возможность вернуться к задаче со свежим взглядом.</p>
+          </article>
+          <article class="card">
+            <h4 class="title-decor card__title">Хорошо ешьте</h4>
+            <p>Выделяйте время на полноценную еду. Так проще замечать голод и поддерживать комфортный ритм работы.</p>
+          </article>
+          <article class="card">
+            <h4 class="title-decor card__title">Читайте</h4>
+            <p>Длинный текст даёт возможность потренироваться удерживать внимание. Начните с нескольких страниц и постепенно увеличивайте время чтения.</p>
+          </article>
+        </div>
+      </section>
+      <section class="gallery">
+        <h2 class="title-decor">А можно в картинках?</h2>
+        <ul class="gallery__list">
+          <li class="gallery__item gallery__item_type_sunset"><img src="./images/sunset.png" alt="Закат над морем" loading="lazy" /></li>
+          <li class="gallery__item gallery__item_type_ice-cream"><img src="./images/ice-cream.png" alt="Десерт с мороженым" loading="lazy" /></li>
+          <li class="gallery__item gallery__item_type_tape"><img src="./images/tape.png" alt="Аудиокассета" loading="lazy" /></li>
+          <li class="gallery__item gallery__item_type_books"><img src="./images/books.png" alt="Стопка книг" loading="lazy" /></li>
+          <li class="gallery__item gallery__item_type_street"><img src="./images/street.png" alt="Улица в вечерних огнях" loading="lazy" /></li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer decorated-zone">
+      <h2 class="display-title">focus</h2>
+    </footer>
   </body>
 </html>
